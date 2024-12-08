@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
-    background: linear-gradient(to bottom, #e4eaff, #d6d6f7); /* Light gradient for background */
+    background: linear-gradient(to bottom, #a4508b, #5f0a87); /* Purple gradient */
     line-height: 1.6;
     overflow-x: hidden;
 }
@@ -118,4 +118,10 @@ li {
     background: #6a11cb;
     color: white;
     text-align: center;
-    padding: 
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.footer p {
+    margin: 0;
+}
