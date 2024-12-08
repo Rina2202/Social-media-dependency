@@ -13,22 +13,27 @@
     </div>
 
     <!-- Pengenalan -->
-    <section class="intro">
-        <button class="settings-btn" onclick="toggleContent('intro-content')">Settings</button>
-        <div id="intro-content">
-            <h2>Introduction</h2>
+    <section>
+        <h2 onclick="toggleContent('intro-content')" class="clickable-title">
+            <span>Introduction</span>
+            <span class="icon">+</span>
+        </h2>
+        <div id="intro-content" class="content">
             <p>
                 Social media has become an integral part of modern life, connecting people across the globe and providing instant access to information and entertainment. However, excessive reliance on social media can lead to dependence, affecting various aspects of daily life. This website explores the factors contributing to social media dependence, its impact on individuals, and ways to mitigate its negative effects.
             </p>
-            <img src="https://via.placeholder.com/800x400" alt="Social media illustration" class="image">
+            <img src="https://as1.ftcdn.net/v2/jpg/02/91/12/03/1000_F_291120372_tOYaD3ZivjMsKfWk1PyHJJ6mP1qqMaCz.jpg" 
+                 alt="Social media illustration" class="image">
         </div>
     </section>
 
     <!-- Faktor kebergantungan -->
-    <section class="factors">
-        <button class="settings-btn" onclick="toggleContent('factors-content')">Settings</button>
-        <div id="factors-content">
-            <h2>Factors of Dependence on Social Media</h2>
+    <section>
+        <h2 onclick="toggleContent('factors-content')" class="clickable-title">
+            <span>Factors of Dependence on Social Media</span>
+            <span class="icon">+</span>
+        </h2>
+        <div id="factors-content" class="content">
             <ul>
                 <li><strong>Interesting Content:</strong> Algorithms designed to retain user attention.</li>
                 <li><strong>Ease of Access:</strong> Continuous mobile usage and the availability of platforms.</li>
@@ -39,25 +44,30 @@
     </section>
 
     <!-- Kesan kebergantungan -->
-    <section class="effects">
-        <button class="settings-btn" onclick="toggleContent('effects-content')">Settings</button>
-        <div id="effects-content">
-            <h2>Effects of Social Media Dependence</h2>
+    <section>
+        <h2 onclick="toggleContent('effects-content')" class="clickable-title">
+            <span>Effects of Social Media Dependence</span>
+            <span class="icon">+</span>
+        </h2>
+        <div id="effects-content" class="content">
             <ul>
                 <li><strong>Social Relationships:</strong> Decreased face-to-face interaction with family and friends.</li>
                 <li><strong>Productivity:</strong> Diminished concentration on work or studies.</li>
                 <li><strong>Physical Health:</strong> Sleep problems and posture issues due to excessive use.</li>
                 <li><strong>Mental Well-being:</strong> Stress, anxiety, and low self-esteem resulting from social comparison.</li>
             </ul>
-            <img src="https://via.placeholder.com/800x400" alt="Effects of social media dependence" class="image">
+            <img src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f" 
+                 alt="Effects of social media dependence" class="image">
         </div>
     </section>
 
     <!-- Cara mengurangkan kebergantungan -->
-    <section class="solutions">
-        <button class="settings-btn" onclick="toggleContent('solutions-content')">Settings</button>
-        <div id="solutions-content">
-            <h2>Ways to Reduce Dependence on Social Media</h2>
+    <section>
+        <h2 onclick="toggleContent('solutions-content')" class="clickable-title">
+            <span>Ways to Reduce Dependence on Social Media</span>
+            <span class="icon">+</span>
+        </h2>
+        <div id="solutions-content" class="content">
             <ol>
                 <li><strong>Set Time Limits:</strong> Use apps or timers to control usage time.</li>
                 <li><strong>Use Social Media Mindfully:</strong> Focus on specific purposes such as learning or communication.</li>
@@ -81,12 +91,16 @@
     <script>
         function toggleContent(sectionId) {
             const section = document.getElementById(sectionId);
+            const icon = section.previousElementSibling.querySelector('.icon');
             if (section.style.display === "none" || !section.style.display) {
                 section.style.display = "block";
+                icon.textContent = "-";
             } else {
                 section.style.display = "none";
+                icon.textContent = "+";
             }
         }
     </script>
 </body>
 </html>
+
