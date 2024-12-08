@@ -14,48 +14,79 @@
 
     <!-- Pengenalan -->
     <section class="intro">
-        <h2>Introduction</h2>
-        <p>
-            Social media has become an integral part of modern life, connecting people across the globe and providing instant access to information and entertainment. However, excessive reliance on social media can lead to dependence, affecting various aspects of daily life. This website explores the factors contributing to social media dependence, its impact on individuals, and ways to mitigate its negative effects.
-        </p>
+        <button class="settings-btn" onclick="toggleContent('intro-content')">Settings</button>
+        <div id="intro-content">
+            <h2>Introduction</h2>
+            <p>
+                Social media has become an integral part of modern life, connecting people across the globe and providing instant access to information and entertainment. However, excessive reliance on social media can lead to dependence, affecting various aspects of daily life. This website explores the factors contributing to social media dependence, its impact on individuals, and ways to mitigate its negative effects.
+            </p>
+            <img src="https://via.placeholder.com/800x400" alt="Social media illustration" class="image">
+        </div>
     </section>
 
     <!-- Faktor kebergantungan -->
     <section class="factors">
-        <h2>Factors of Dependence on Social Media</h2>
-        <ul>
-            <li><strong>Interesting Content:</strong> Algorithms designed to retain user attention.</li>
-            <li><strong>Ease of Access:</strong> Continuous mobile usage and the availability of platforms.</li>
-            <li><strong>Social Gratification:</strong> The feeling of acceptance through likes, comments, and followers.</li>
-            <li><strong>FOMO (Fear of Missing Out):</strong> Fear of missing out on the latest developments.</li>
-        </ul>
+        <button class="settings-btn" onclick="toggleContent('factors-content')">Settings</button>
+        <div id="factors-content">
+            <h2>Factors of Dependence on Social Media</h2>
+            <ul>
+                <li><strong>Interesting Content:</strong> Algorithms designed to retain user attention.</li>
+                <li><strong>Ease of Access:</strong> Continuous mobile usage and the availability of platforms.</li>
+                <li><strong>Social Gratification:</strong> The feeling of acceptance through likes, comments, and followers.</li>
+                <li><strong>FOMO (Fear of Missing Out):</strong> Fear of missing out on the latest developments.</li>
+            </ul>
+        </div>
     </section>
 
     <!-- Kesan kebergantungan -->
     <section class="effects">
-        <h2>Effects of Social Media Dependence</h2>
-        <ul>
-            <li><strong>Social Relationships:</strong> Decreased face-to-face interaction with family and friends.</li>
-            <li><strong>Productivity:</strong> Diminished concentration on work or studies.</li>
-            <li><strong>Physical Health:</strong> Sleep problems and posture issues due to excessive use.</li>
-            <li><strong>Mental Well-being:</strong> Stress, anxiety, and low self-esteem resulting from social comparison.</li>
-        </ul>
+        <button class="settings-btn" onclick="toggleContent('effects-content')">Settings</button>
+        <div id="effects-content">
+            <h2>Effects of Social Media Dependence</h2>
+            <ul>
+                <li><strong>Social Relationships:</strong> Decreased face-to-face interaction with family and friends.</li>
+                <li><strong>Productivity:</strong> Diminished concentration on work or studies.</li>
+                <li><strong>Physical Health:</strong> Sleep problems and posture issues due to excessive use.</li>
+                <li><strong>Mental Well-being:</strong> Stress, anxiety, and low self-esteem resulting from social comparison.</li>
+            </ul>
+            <img src="https://via.placeholder.com/800x400" alt="Effects of social media dependence" class="image">
+        </div>
     </section>
 
     <!-- Cara mengurangkan kebergantungan -->
     <section class="solutions">
-        <h2>Ways to Reduce Dependence on Social Media</h2>
-        <ol>
-            <li><strong>Set Time Limits:</strong> Use apps or timers to control usage time.</li>
-            <li><strong>Use Social Media Mindfully:</strong> Focus on specific purposes such as learning or communication.</li>
-            <li><strong>Engage in Alternative Activities:</strong> Participate in physical activities, read books, or interact with people in person.</li>
-            <li><strong>Turn Off Notifications:</strong> Reduce distractions by disabling app notifications.</li>
-        </ol>
+        <button class="settings-btn" onclick="toggleContent('solutions-content')">Settings</button>
+        <div id="solutions-content">
+            <h2>Ways to Reduce Dependence on Social Media</h2>
+            <ol>
+                <li><strong>Set Time Limits:</strong> Use apps or timers to control usage time.</li>
+                <li><strong>Use Social Media Mindfully:</strong> Focus on specific purposes such as learning or communication.</li>
+                <li><strong>Engage in Alternative Activities:</strong> Participate in physical activities, read books, or interact with people in person.</li>
+                <li><strong>Turn Off Notifications:</strong> Reduce distractions by disabling app notifications.</li>
+            </ol>
+            <p>Learn more about social media addiction: 
+                <a href="https://www.healthline.com/health/social-media-addiction" target="_blank">Healthline Article</a>
+            </p>
+            <p>Tips for reducing social media use: 
+                <a href="https://www.verywellmind.com/how-to-manage-social-media-use-5184797" target="_blank">Verywell Mind Article</a>
+            </p>
+        </div>
     </section>
 
     <!-- Penutup -->
     <footer class="footer">
         <p>Thank You</p>
     </footer>
+
+    <script>
+        function toggleContent(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section.style.display === "none" || !section.style.display) {
+                section.style.display = "block";
+            } else {
+                section.style.display = "none";
+            }
+        }
+    </script>
 </body>
 </html>
